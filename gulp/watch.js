@@ -2,7 +2,12 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload();
 
-gulp.task('watch',['pug','pug:watch','sass','sass:watch'], function () {
+
+gulp.task('html:watch', function () {
+    gulp.watch('app/*.html');
+});
+
+gulp.task('watch',['html:watch','sass','sass:watch'], function () {
 
     browserSync.init({
         server: "./app"
