@@ -1,0 +1,148 @@
+@import color.sass
+@media (max-width: 992px)
+	.top_bar
+		.left
+			.social
+				ul
+					border: none
+		.right
+			.time, .lang, .currency, .login
+				border: none
+	.info_bar
+		.item_wrapper
+			.icon_wrapper
+				display: none
+			.text_wrapper
+				padding: 40px 0
+	.menu
+		ul
+			.submit
+				float: left
+@media (max-width: 768px)
+	.info_bar
+		padding-bottom: 30px
+		.item_wrapper
+			padding: 0
+			text-align: center
+			.text_wrapper
+				padding: 3px 0
+				width: 100%
+				p
+					display: inline
+					margin-left: 2px
+				.title
+					margin: 0
+			.logo
+				margin: 0 auto
+				padding: 20px 0
+	.top_bar
+		.left, .right
+			float: none
+			text-align: center
+			.time
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+			.set_wrapper
+				margin-top: 60px
+				width: 100%
+			.time, .lang, .currency, .login
+				padding: 10px 13px
+		.left
+			.social
+				position: absolute
+				top: 30px
+				left: 0
+				width: 100%
+				ul
+					padding: 10px 3px
+	.menu
+		height: 60px
+		.btn_menu_wrapper
+			height: 60px
+			width: 100%
+			cursor: pointer
+		.btn_menu_wrapper.active
+			background-color: $nav_color_scheme
+		#btn_menu
+			display: block
+		ul
+			display: none
+			background: #353f45
+			float: left
+			z-index: 10
+			top: 60px
+			position: absolute
+			li
+				width: 100%
+				padding: 0 20px
+				border-bottom: none
+				a
+					border-bottom: 1px solid #545c61
+					width: 100%
+					color: #fff
+					padding: 14px 0
+					span
+						padding: 0
+						border: none
+				&:hover
+					background-color: transparent
+					border-color: transparent
+					a
+						color: $nav_color_scheme
+				.drop_menu
+					display: block
+					position: relative
+					top: 0
+					left: 0
+					background-color: #283136
+					border-top: 1px solid #696f73
+					border-bottom: 1px solid #696f73
+					width: 100%
+					li:last-child
+						a
+							border-bottom: none
+					li
+						&:hover
+							a
+								color: $nav_color_scheme
+			.submit
+				background-color: transparent
+				padding: 20px
+				a
+					border: none
+					background-color: $nav_color_scheme
+					padding: 19px 10px
+					text-align: center
+				&:hover
+					background-color: transparent
+					color: #fff
+	#section_top
+		padding-bottom: 23px
+		background-size: cover
+		position: relative
+		.container
+			background-image: none
+			.title_block
+				margin: 20px auto
+				max-width: 200px
+				padding: 16px 16px 16px 30px
+				.wrapper_text
+					h2
+						font-size: 16px
+					p
+						font-size: 12px
+						font-weight: 400
+						margin-top: 10px
+					&::before
+						width: 2px
+						left: -16px
+			.btn_filter
+				display: block
+			.filter_wrapper
+				display: none
+				position: absolute
+				top: 165px
+				.filters_title
+					display: none

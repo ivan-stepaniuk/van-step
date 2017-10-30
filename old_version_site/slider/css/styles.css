@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Neuron_Heavy";
+  src: url("../fonts/Neuron_Heavy.otf"); }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Neuron_Heavy";
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat; }
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  max-width: 1000px; }
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+    width: 1000px;
+    height: 200px; }
+    #slider ul li {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      opacity: 0; }
+      #slider ul li img {
+        width: 133px;
+        z-index: 10;
+        position: absolute;
+        bottom: 3px;
+        left: 34px;
+        -webkit-transition: 0.5s ease-out;
+        -moz-transition: 0.5s ease-out;
+        -o-transition: 0.5s ease-out;
+        transition: 0.5s ease-out; }
+      #slider ul li .circle {
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        z-index: 1;
+        -webkit-transition: 0.5s ease-out;
+        -moz-transition: 0.5s ease-out;
+        -o-transition: 0.5s ease-out;
+        transition: 0.5s ease-out; }
+      #slider ul li:nth-child(3), #slider ul li:nth-child(4), #slider ul li:nth-child(5) {
+        opacity: 1; }
+      #slider ul li:hover .circle {
+        border-color: #fff; }
+      #slider ul li:hover img {
+        transform: scaleY(1.1);
+        transform-origin: bottom; }
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 19px 36px;
+  background-size: 100% 100%;
+  text-decoration: none; }
+
+a.control_prev {
+  left: 0;
+  background-image: url(../img/prev.png); }
+  a.control_prev:hover {
+    background-image: url(../img/prev-hover.png);
+    color: #22b8b3; }
+
+a.control_next {
+  right: 0;
+  background-image: url(../img/next.png); }
+  a.control_next:hover {
+    background-image: url(../img/next-hover.png);
+    color: #22b8b3; }
+
+p {
+  text-align: center;
+  margin-top: 50px; }
+  p a {
+    color: #e4e4e4;
+    font-size: 36px; }
+    p a:hover {
+      color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */
