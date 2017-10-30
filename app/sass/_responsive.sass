@@ -5,10 +5,15 @@
             li
                 width: 100%
 @media only screen and (max-width: 768px)
+    body::after
+        height: 125px
+    ul 
+        padding: 0
     .flex
         flex-wrap: wrap
-        .section_left, &>li
+        .section_left, .section_right, &>li
             flex-basis: 100%
+            max-width: 100%
     .row
         background-image: url(../images/bg1.jpg)
         background-size: 100%
@@ -18,4 +23,6 @@
             background-image: none
     .section_left::after 
         display: none
-
+    .section_right
+        h2 
+            margin-left: 0
